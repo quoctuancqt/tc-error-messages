@@ -1,0 +1,5 @@
+<form [formGroup]="form">
+  <input type="text" [(ngModel)]="model.firstName" formControlName="firstName"/>
+  <tc-control-messages [control]="form.controls.firstName"></tc-control-messages>
+  <button [disabled]="!form.valid">Register</button>
+</form>
